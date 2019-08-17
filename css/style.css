@@ -5,9 +5,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #444;
   background-color: #fff;
-  padding: 50px 100px;
+  padding: 10px 0px;
   background-color: #ddd; 
-  background: url(../img/bgc.jpg) no-repeat;
+  /*background: url(../img/bgc.jpg) no-repeat;*/
   background-size: cover;
   background-attachment: fixed;
 }
