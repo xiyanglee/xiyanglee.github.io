@@ -1,137 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style type="text/css">
+    <meta charset="utf-8">
+    <title>Xiyang</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
-    </style>
-    <link rel="stylesheet" href="index.css">
+    <!-- Google Webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" id="theme-styles">
+
+    <!--[if lt IE 9]>      
+        <script src="js/respond.js"></script>
+    <![endif]-->
+    
 </head>
 <body>
-<!--头部部分开始-->
-<div class="header">
-    <div class="logo fl"><img src="webpicture/02logo.png" alt=""></div>
+    <header>
+        <div class="widewrapper masthead">
+            <div class="container">
+                <a href="index.html" id="logo">
+                    <img src="img/logo1.png" alt="clean Blog">
+                </a>
+        
+                <div id="mobile-nav-toggle" class="pull-right">
+                    <a href="#" data-toggle="collapse" data-target=".clean-nav .navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
 
-</div>
-<!--通栏100%-->
-<!--写法：.nav>.nav-con>ul>li*6>a[#]-->
-<div class="nav">
-    <!--内部盒子居中-->
-    <div class="nav-con">
-        <ul>
-            <li><a href="https://inf-xiyang.github.io">首页</a></li>
-            <li><a href="https://github.com/Inf-Xiyang" target="_blank">GitHub个人页</a></li>
-            <li><a href="https://github.com/Inf-Xiyang/Inf-Xiyang.github.io/issues" target="_blank">GitHub全文索引</a></li>
-        </ul>
-    </div>
-    <!--头部部分结束-->
-</div>
-<!--banner旗帜部分开始-->
-<div class="banner">
-    <img src="webpicture/02banner.png" alt="">
-</div>
-<!--banner旗帜部分结束-->
-<!--信息公告开始message-->
-<!--.mes>.mes-con>.mes-con-left+.mes-con-right-->
-<div class="mes">
-    <div class="mes-con">
-        <div class="mes-con-left fl">欢迎来到Inf-Xiyang的博客首页</div>
-        <div class="mes-con-right fr">
-            <img src="webpicture/02zone.png" alt="">
-            <img src="webpicture/02weibo.png" alt="">
-            <img src="webpicture/02xinlang.png" alt="">
-            <img src="webpicture/02renren.png" alt="">
-        </div>
-    </div>
-</div>
-<!--信息公告结束message-->
-<!--新闻news部分开始-->
-<div class="news clearfix">
-    <!--三个div要浮动，可以调用上边的公共类两个左浮一个右浮-->
-    <!--新闻左盒子-->
-    <div class="news-left fl">
-        <!--.products产品发布开始-->
-        <div class="pro">
-			<img src="webpicture/02o.jpg" alt="">
-            推荐文章：零基础PyMOL作图教程
-        </div>
-        <div class="pro-pic">
-            <a href="https://zhuanlan.zhihu.com/p/62350762" target="_blank">
-			<img src="webpicture/02home_hot_01.png" alt=""></a>
-        </div>
-    </div>
-    <!--新闻左盒子结束-->
-    <!--新闻中间盒子开始-->
-    <div class="news-cen fl">
-        <div class="pro">
-            <img src="webpicture/02o.jpg" alt="">
-            最新文章
-        </div>
-        <ul>
-            <li><a href="https://github.com/Inf-Xiyang/Inf-Xiyang.github.io/issues/1" target="_blank" class="newtitle">New: mol2文件分子名称的批量修改（GitHub）</a></li>
-            <li><a href="https://zhuanlan.zhihu.com/p/62350762" target="_blank">零基础PyMOL作图教程（知乎）</a></li>
-            <li><a href="#"> </a></li>
-            <li><a href="#"> </a></li>
-            <li><a href="#"> </a></li>
-            <li><a href="#"> </a></li>
-        </ul>
-    </div>
-    <!--新闻中间盒子结束-->
-    <!--新闻右盒子开始-->
-    <div class="news-right fr">
-        <div class="pro">
-            <img src="webpicture/02o.jpg" alt="">
-            博主信息
-        </div>
-        <div class="tec">
-            <ul>
-                <li><a href="https://github.com/Inf-Xiyang" target="_blank" style='color:black'>GitHub：Inf-Xiyang</a></li>
-                <li>酷安：夕阳space</li>
-                <li>图虫：夕阳space</li>
-                <li>Bilibili：夕阳space </li>
-            </ul>
-        </div>
-        <p>
-            反馈方式
-            <br>邮箱：xiyanglee@nwafu.edu.cn
-        </p>
-    </div>
-    <!--新闻右盒子结束-->
-</div>
-<!--新闻部分结束-->
-<!--底部开始-->
-<div class="footer">
-    <div class="footer-con">
-        <!--dl*4>dt+dd-->
-        <dl>
-            <dt>GitHub个人链接</dt>
-            <dd><a href="https://github.com/Inf-Xiyang" target="_blank" style=" color:#808080">GitHub个人页</a></dd>
-			<dd><a href="https://github.com/Inf-Xiyang/Inf-Xiyang.github.io/issues" target="_blank" style=" color:#808080">GitHub全文索引(Issues)</a></dd>
-        </dl>
-        <dl>
-            <dt> </dt>
-            <dd> </dd>
-        </dl>
-        <dl>
-            <dt>知乎个人链接</dt>
-            <dd>知乎个人页</dd>
-        </dl>
-        <dl>
-            <dt> </dt>
-            <dd> </dd>
-        </dl>
-    </div>
-</div>
-<div class="bot">
-    <font size="3" color="#ffffff">Inf-Xiyang</font>
+                <nav class="pull-right clean-nav">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav nav-pills navbar-nav">
+                          
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <!--
+							<li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+							-->                        
+                        </ul>
+                    </div>
+                </nav>        
 
-<body link="#ffffff" alink="#ff0000" vlink="#ffffff">
-	<font size="2">
-		<br><br><a href="https://github.com/AliceRachel/SimpleFullPage" target="_blank">网页源码支持：AliceRachel</a>
-	</font>
-</body>
-</div>
+            </div>
+        </div>
+
+        <div class="widewrapper subheader">
+            <div class="container">
+                <div class="clean-breadcrumb">
+                    <a href="#">Blog</a>
+                </div>
+
+                <!--搜索按钮
+				<div class="clean-searchbox">
+                    <form action="#" method="get" accept-charset="utf-8">
+                        <input class="searchfield" id="searchbox" type="text" placeholder="Search">
+                        <button class="searchbutton" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+				-->
+            </div>
+        </div>
+    </header>
+
+    <div class="widewrapper main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 blog-main">
+                    <!-- 修改：正文起始 -->
+					<div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <article class=" blog-teaser">
+                                <header>
+                                    <img src="img/1.jpg" alt="">
+                                    <h3><a href="https://github.com/Inf-Xiyang/Inf-Xiyang.github.io/issues/1" target="_blank">批量修改mol2文件分子名称</a></h3>
+                                    <span class="meta">15 August 2019, GitHub</span>
+                                    <hr>
+                                </header>
+                            
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <article class="blog-teaser">
+                                <header>
+                                    <img src="img/2.jpg" alt="">
+                                    <h3><a href="https://zhuanlan.zhihu.com/p/62350762" target="_blank">零基础PyMOL作图教程</a></h3>
+									<h4>——绘制蛋白质-分子结合模式图</h4>
+                                    <span class="meta">14 April 2017, 知乎</span>
+                                    <hr>
+                                </header>
+                            
+                            </article>
+                        </div>
+                    </div>
+        
+                    <!-- 修改 <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <article class="blog-teaser">
+                                <header>
+                                    <img src="img/4.jpg" alt="">
+                                    <h3><a href="single.html">Blackor - Responsive HTML5 Theme</a></h3>
+                                    <span class="meta">19 August 2017, John Doe</span>
+                                    <hr>
+                                </header>
+                               
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <article class=" blog-teaser">
+                                <header>
+                                    <img src="img/1.jpg" alt="">
+                                    <h3><a href="single.html">How to Create Template</a></h3>
+                                    <span class="meta">19 August 2017, John Doe</span>
+                                    <hr>
+                                </header>
+                            
+                            </article>
+                        </div>
+
+                    </div>
+                     <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <article class="blog-teaser">
+                                <header>
+                                    <img src="img/3.jpg" alt="">
+                                    <h3><a href="single.html">Blackor - Responsive HTML5 Theme</a></h3>
+                                    <span class="meta">19 August 2017, John Doe</span>
+                                    <hr>
+                                </header>
+                               
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <article class=" blog-teaser">
+                                <header>
+                                    <img src="img/1.jpg" alt="">
+                                    <h3><a href="single.html">How to Create Template</a></h3>
+                                    <span class="meta">19 August 2017, John Doe</span>
+                                    <hr>
+                                </header>
+                            
+                            </article>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <article class="blog-teaser">
+                                <header>
+                                    <img src="img/3.jpg" alt="">
+                                    <h3><a href="single.html">Blackor - Responsive HTML5 Theme</a></h3>
+                                    <span class="meta">19 August 2017, John Doe</span>
+                                    <hr>
+                                </header>
+                               
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <article class=" blog-teaser">
+                                <header>
+                                    <img src="img/5.jpg" alt="">
+                                    <h3><a href="single.html">How to Create Template</a></h3>
+                                    <span class="meta">19 August 2017, John Doe</span>
+                                    <hr>
+                                </header>
+                            
+                            </article>
+                        </div>
+
+                    </div>
+					<!-- 修改：正文结束 -->
+
+                    <div class="paging">
+                        <a href="#" class="older">Older Post</i></a>
+                    </div>
+                </div>
+                <aside class="col-md-4 blog-aside">
+                    
+                    <div class="aside-widget">
+                        <header>
+                            <h3>推荐文章</h3>
+                        </header>
+                        <!-- 修改：侧栏起始 -->
+						<div class="body">
+                            <ul class="<!--clean-list-->tags">
+                                <li><a href="https://zhuanlan.zhihu.com/p/62350762" target="_blank">零基础PyMOL作图教程</a></li>
+								
+                            </ul>
+                        </div>
+                    </div>
+                <!--
+                    <div class="aside-widget">
+                        <header>
+                            <h3>Related Post</h3>
+                        </header>
+                        <div class="body">
+                            <ul class="clean-list">
+                                <li><a href="">Blackor Responsive Theme</a></li>
+                                <li><a href="">Portfolio Bootstrap Template</a></li>
+                                <li><a href="">Clean Slider Template</a></li>
+                                <li><a href="">Clean - Responsive HTML5 Template</a></li>
+                                <li><a href="">Responsive Pricing Table</a></li>
+                                <li><a href="">Yellow HTML5 Template</a></li>
+                            </ul>
+                        </div>
+                    </div>-->
+
+                    <div class="aside-widget">
+                        <header>
+                            <h3>Tags</h3>
+                        </header>
+                        <div class="body clearfix">
+                            <ul class="tags">
+                                <li><a href="#">Bioinformatics</a></li>
+                                <li><a href="#">Cheminformatics</a></li>							
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="widewrapper footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 footer-widget">
+                        <h3> <i class="fa fa-user"></i>About</h3>
+
+                       <p>欢迎访问@Xiyang的博客小站，我会不定时分享一些生物信息学、化学信息学等方面的小技巧。</p>
+                       <p>另外，这是一个依托于GitHub的纯静态网站，其优点在于无需hexo等博客工具，将此项目的工程Clone到本地进行简单的修改即可打造一个属于个人的博客。</p>
+                    </div>
+
+                    <div class="col-md-4 footer-widget">
+                        <h3> <i class="fa fa-pencil"></i> Personal Pages</h3>
+                        <ul class="clean-list">
+                            <!-- 修改：底栏起始 -->
+							<li><a href="https://github.com/Inf-Xiyang" target="_blank">GitHub @Inf-Xiyang</a></li>
+                            <li><a href="https://www.zhihu.com/people/li-xi-yang-5/posts"  target="_blank">知乎 @李希阳</a></li>
+                            <li><a href="https://github.com/Inf-Xiyang/Inf-Xiyang.github.io" target="_blank">本网站GitHub项目仓库</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 footer-widget">
+                        <h3> <i class="fa fa-envelope"></i>Contact Me</h3>
+
+                        <p>Personal Email：xiyangspace@foxmail.com</p>
+                        <p>Unit Email：xiyanglee@nwafu.edu.cn</p>
+                         <div class="footer-widget-icon"><!--
+                            <i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-google"></i>
+							-->
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="widewrapper copyright">
+                Copyright &copy; Website content follows the CC BY-NC license.<!--<a target="_blank" href=""></a>-->
+        </div>
+    </footer>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+
 </body>
 </html>
