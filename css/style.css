@@ -249,7 +249,7 @@ The button that expands the navigation in mobile-mode
 }
 
 #mobile-nav-toggle .fa {
-  color: #f8f8f9;
+  color: #000000; /* 手机端显示菜单按钮颜色 */
 }
  .blog-teaser header h3 a:hover {
    color: red !important;
@@ -279,13 +279,16 @@ Mobile version of the navigation
   }
 
   .clean-nav .nav-pills > li {
-    margin-left: 0;
-    float: none;
+    margin-left: 460px; /* 下拉菜单(对象)左边外延边距 */
+	margin-right: 20px; /* 下拉菜单(对象)右边外延边距 */
+	margin-bottom: 10px; /* 下拉菜单(对象)下侧外延边距(间距) */
+    margin-top: 10px;
+	float: none;
   }
 
   .clean-nav .nav-pills > li > a {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 24px; /* 下拉菜单文字位置 */
+    /*margin-right: 40px; 下拉菜单文字位置 */
   }
 
   .clean-nav .nav-pills > li a:hover {
@@ -296,7 +299,7 @@ Mobile version of the navigation
     color: #444;
     padding: 11px 0px 11px 20px;
     line-height: 14px;
-    border: 1px solid #ddd;
+    border: 0px solid #ddd; /* 下拉菜单内框线宽 */
     padding-right: 16px;
     border-radius: 25px;
   }
