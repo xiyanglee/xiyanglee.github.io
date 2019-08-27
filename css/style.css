@@ -8,7 +8,7 @@ body {
   padding: 10px 0px;
   background-color: #ddd;
   background-image: linear-gradient(to right, #9ED110, #50B517, #179067, #476EAF, #9f49ac, #CC42A2, #FF3BA7, #FF5800, #FF8100, #FEAC00, #FFCC00, #EDE604);
-  /*background: url(../img/bgc.jpg) no-repeat;*/
+  /*background: url(../Blog/img/bgc.jpg) no-repeat;*/
   background-size: cover;
   background-attachment: fixed;
 }
