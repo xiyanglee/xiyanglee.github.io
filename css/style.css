@@ -1151,6 +1151,21 @@ About me page
 }
 
 /* ===============
+Xiyang New: The various styles that are used in the about me text chunk 
+=================
+*/
+.cv-head {
+	font-family:Arial,Verdana,Sans-serif;
+	font-weight: bold;
+}
+
+.cv-h1 {
+	font-family:Arial,Verdana,Sans-serif;
+	font-weight: bold;
+	font-color:blue;
+}
+
+/* ===============
 The various styles that are used in the about me text chunk 
 =================
 */
